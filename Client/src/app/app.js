@@ -5,6 +5,11 @@ import { Provider } from 'react-redux'
 import store , {persistor} from "../../store"
 import d_action from '../../Actions'
 
+//testing components first here
+import Movie from "../components/Movie";
+import Header from "../components/Header";
+import Searchbar from '../components/Search';
+
 class App extends React.Component {
     render() {
       store.dispatch(d_action.testfunc())
@@ -12,8 +17,9 @@ class App extends React.Component {
             <div>
 <Provider store={store}>
              <div>
-
-                hello
+               <Searchbar/>
+                <Movie/>
+                <Header/>
 </div>
 </Provider>
 
