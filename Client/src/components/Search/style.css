@@ -1,5 +1,36 @@
 .search_container{
+    display: flex;
+    width:50%;
     background-color:rgba(21, 0, 143, 0.801);
-    height:20px;
+    height:15px;
+    justify-content: center;
+    border: 2px solid rgba(204, 204, 204, 0.281);
    
 }
+
+#search_field{
+    min-width: 25%;
+    border:none;
+    flex-basis: 50%;
+    flex-grow: 1;
+    background-color: purple;
+
+     
+    /* width: 100%;  */
+}
+
+#search_field + button{
+    border:none;
+    background-color: red;
+    /* display: flex; */
+    flex-basis: 15%;
+
+flex-grow: 0;
+flex-shrink: 1;
+
+}
+
+/* .search_container{
+    order:1;
+} */
+

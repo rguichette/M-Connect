@@ -5,6 +5,7 @@ import { Provider } from 'react-redux'
 import store , {persistor} from "../../store"
 import d_action from '../../Actions'
 
+import "./style.css"
 //testing components first here
 import Movie from "../components/Movie";
 import Header from "../components/Header";
@@ -17,9 +18,10 @@ class App extends React.Component {
             <div>
 <Provider store={store}>
              <div>
-               <Searchbar/>
-                <Movie/>
+               
+                
                 <Header/>
+                <Movie/>
 </div>
 </Provider>
 

@@ -1,5 +1,50 @@
+
 .header_container{
     background-color:rgba(136, 118, 197, 0.445);
-    height: 40px;
+    height: 30px;
+    display: flex;
+    max-width: 100%;
+    overflow: hidden;
+    justify-content: center;
+    position: fixed;
+
+    margin: 0;
+    width: 100%;
+/* flex-direction: column; */
+
+}
+
+
+/* .header_container  */
+
+#nav_burger{
+    /* /* display: flex; */
+    
+    display: inline;
+  
+    justify-content: center;
+   
+border:1px solid black;
+    /* height: 10px; */
+    background-color: green;
+    /* align-self: initial */
+    /* margin: auto; */
+    flex-wrap: wrap;
+    
+    
+}
+
+ g {
+
+    
+    
+}
+
+.search_container{
+    /* order:  */
+    align-self: center;
+justify-self: center;
+margin: auto;
+order: 1;
 
 }

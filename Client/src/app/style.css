@@ -1,0 +1,9 @@
+body{
+    background-color:rgb(19, 145, 128);
+    margin: 0;
+    padding: 0;
+    height:3000px;
+    display: flex;
+    flex-direction: row
+    
+}
