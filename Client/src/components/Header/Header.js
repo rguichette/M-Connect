@@ -10,8 +10,14 @@ export default class Header extends Component {
         return (
             <div className="header_container">
                 
-                <Search/>
+                
                 <Burger/>
+                <div className="menu">
+                          menu here
+                      </div>
+                
+
+                <Search/>
             </div>
         )
     }
@@ -23,17 +29,29 @@ export default class Header extends Component {
     render() {
      
         return (
-            <div id="nav_burger">
-                
-                <svg width="30" height="20" >
-                <g fill="none">
-                    <path stroke="black" d="M5 10 l215 0" />
-                    <path stroke="black" d="M5 15 l215 0" />
-                    <path stroke="black" d="M5 20 l215 0" />
-                </g>
-
-                </svg>
-            </div>
+            
+                <input id="nav_burger" type="checkbox"/>
+             
+          
         )
     }
 }
+
+
+
+{/* <svg width="20" height="21" >
+<g fill="none">
+    <path stroke="black" d="M5 10 l215 0" />
+    <path stroke="black" d="M5 15 l215 0" />
+    <path stroke="black" d="M5 20 l215 0" />
+</g>
+
+</svg>
+
+
+    <div id="nav_burger">
+                <input id="nav_burger" type="checkbox"/>
+             
+            </div>
+
+*/}

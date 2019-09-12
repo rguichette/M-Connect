@@ -21,7 +21,7 @@
 
 #search_field + button{
     border:none;
-    background-color: red;
+    /* background-color: red; */
     /* display: flex; */
     flex-basis: 15%;
 

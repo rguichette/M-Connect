@@ -19,10 +19,24 @@ class App extends React.Component {
 <Provider store={store}>
              <div>
                
-                
+             
                 <Header/>
-                <Movie/>
-</div>
+                
+                     
+
+                      <Movie/>
+                    
+                    </div>
+
+
+
+
+
+
+
+
+                  
+                
 </Provider>
 
             </div>
