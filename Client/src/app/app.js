@@ -19,7 +19,8 @@ import WatchList from '../components/pages/watch_List'
 import Likes from '../components/pages/likes'
 import Home from '../components/pages/home';
 
-
+import SignIn from '../components/pages/SignIn'
+import SignUp from '../components/pages/SignUp'
 
 class App extends React.Component {
   constructor(props){
@@ -37,23 +38,9 @@ class App extends React.Component {
 
 
 
+<SignUp/>
 
 
-
-
-<Router>
-<Header/>
-
-<div className="app_container">
-<Route path="/" exact component={Home} />
-<Route path="/watch_list" component={WatchList} />
-<Route path="/friends" component={Friends} />
-<Route path="/favorites" component={Favorites} />
-<Route path="/history" component={History} />
-<Route path="/liked" component={Likes} />
-<Route path="/saved_searches" component={SavedSearches} />
-</div>
-</Router>
 
 
 
@@ -81,15 +68,12 @@ class App extends React.Component {
 
 export default App;
 
-
-
-
-
-
 /*
 
 <Router>
+<Header/>
 
+<div className="app_container">
 <Route path="/" exact component={Home} />
 <Route path="/watch_list" component={WatchList} />
 <Route path="/friends" component={Friends} />
@@ -97,7 +81,9 @@ export default App;
 <Route path="/history" component={History} />
 <Route path="/liked" component={Likes} />
 <Route path="/saved_searches" component={SavedSearches} />
-
+</div>
 </Router>
 
-*/
+
+
+*/ 

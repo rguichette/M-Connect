@@ -9,7 +9,7 @@
   margin: -2;
   width: 100%;
   z-index: 0;
-  margin: 0 auto
+  margin: 0 auto;
     /* flex-direction: column; */
 }
 
@@ -39,6 +39,7 @@ text-align: center;
   /* transform: translate(0px); */
 }
 
+
 #nav_burger[type="checkbox"]:checked+.menu {
   background-color: #ccc;
   margin: 0;
@@ -57,4 +58,70 @@ g {}
   justify-self: center;
   margin: auto;
   order: 1;
+}
+
+
+
+.right_profile_btn{
+  order:3;
+  
+  /* background-color: blue; */
+  justify-self: flex-end
+}
+
+.right_profile_btn input{
+  position: absolute;
+  right: 0;
+  margin: 8px 10px;
+  /* background-color: blue; */
+  justify-self: flex-end
+}
+
+.right_menu{
+  /* visibility: hidden; */
+  height: 200px;
+  background-color:purple;
+  width: 150px;
+  margin:25px;
+  margin-right: 35px;
+  position:justify;
+  text-align: center;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  /* visibility: hidden; */
+ /* display: none; */
+  
+  
+}
+
+.right_menu a{
+  /* visibility: hidden; */
+  color:black;
+  padding: 20px;
+ font-size: 20px;
+
+  
+  
+}
+
+.right_menu a:nth-child(2){
+  /* visibility: hidden; */
+  color:black;
+  padding: 25px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc
+
+  
+  
+}
+
+
+.right_profile_btn input:checked + .right_menu{
+  visibility: visible;
+  
+ 
+
+ background-color:yellow;
 }

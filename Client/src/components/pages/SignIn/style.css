@@ -1,0 +1,67 @@
+
+#testapp{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: green;
+}
+
+.signInForm{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 50%;
+    height: 40%;
+    min-width: 350px;
+    min-height: 400px;
+    justify-self: center;
+    align-self: center;
+    position: absolute;
+    justify-content: center
+  
+}
+
+.signInForm_container{
+    display: flex;
+    height: 100%;
+    width:100%;
+
+    /* flex-basis: 350px; */
+    /* flex-grow: 0; */
+    /* flex-shrink: 0; */
+    /* background-color: red; */
+    /* position: absolute; */
+    /* right:calc( 50% - (310.047px/2)  ); */
+     justify-content: center;
+/* flex-direction: column; */
+
+
+}
+
+
+.signInForm input {
+
+flex-basis: 1
+
+
+}
+
+.signInForm input, .signInForm button {
+        display: flex;
+    align-self: center;
+    height: 30px;
+    width: 300px;
+    /* display: flex; */
+    /* position: absolute;
+    display: flex;
+    /* height:100%; */ 
+    
+
+}
+
+.signInForm button {
+    margin-top: 20px;
+    justify-content: center;
+/* position: absolute; */
+/* vertical-align: text-bottom */
+}

@@ -46,6 +46,15 @@ export default class Header extends Component {
 
 
                 <Search/>
+                <div className="right_profile_btn">
+                    <input type="checkbox" />
+                    <div className="right_menu">
+                        <Link to="/profile">Profile</Link>
+                        <Link to="/settings">Settings</Link> 
+                        <Link to="/signOut">sign out</Link>
+                    </div>
+                </div>
+                
             </div>
         )
     }

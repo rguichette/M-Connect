@@ -1,4 +1,4 @@
-import SignUp from "./SignUp";
+import SignUpForm from "./SignUp.container";
 
 //sign up page
-export default SignUp
+export default SignUpForm

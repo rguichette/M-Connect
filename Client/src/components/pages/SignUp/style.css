@@ -1,0 +1,71 @@
+/* todo: remove this l8er - place in main css doc */
+
+
+.signUp_container{
+    display: flex;
+position: absolute;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+
+    align-self: center;
+    justify-self: center;
+    
+ 
+}
+.signUp_container form {
+    
+    height: 50%;
+    width: 75%;
+    
+    display: flex;
+    background-color: #fff;
+
+    align-self: center;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    padding-bottom: 30px;
+    /* flex-grow: 0; */
+
+
+
+}
+
+.input_fields{
+
+    display: flex;
+    justify-self: center;
+    flex-wrap: wrap;
+
+    padding-bottom: 30px;
+    margin:0px 10px 0px 10px;
+
+
+}
+
+.input_fields input{
+    /* display: block; */
+    flex-basis: 40%;
+    flex-grow: 1;
+    height:25px;
+    border: 1px solid black;
+    margin:10px;
+    text-align: center;
+    
+
+}
+
+
+.signUp_container button {
+    display: flex;
+    width:30%;
+    align-self: center;
+background-color: grey;
+justify-content: center;
+height:35px;
+
+
+}

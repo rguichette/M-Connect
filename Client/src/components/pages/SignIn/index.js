@@ -1,4 +1,4 @@
-import SignIn from "./SignIn";
+import SignInForm from "./SignIn.container.js";
 
 //sign In page
-export default SignIn
+export default SignInForm
