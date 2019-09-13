@@ -1,4 +1,4 @@
-import * as firsttest from './test'
+export * from './auth'
 
 
-export default firsttest
+

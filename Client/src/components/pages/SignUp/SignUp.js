@@ -5,7 +5,7 @@ export default class SignUp extends Component {
     render() {
         return (
             <div className="signUp_container">
-                <form>
+                <form method="none">
                 <div className="input_fields">
                     
                 <input type="text" placeholder="first name"/>
@@ -20,7 +20,7 @@ export default class SignUp extends Component {
 
 
                 </div>
-                <button>submit</button>
+                <button type="button">submit</button>
                 </form>
             </div>
         )

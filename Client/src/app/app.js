@@ -1,8 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
-import { Provider } from 'react-redux'
 
-import store , {persistor} from "../../store"
 import d_action from '../../Actions'
 
 import "./style.css"
@@ -22,6 +20,11 @@ import Home from '../components/pages/home';
 import SignIn from '../components/pages/SignIn'
 import SignUp from '../components/pages/SignUp'
 
+
+import * as auth from "../../Actions/auth"
+
+// console.log("auth is ", auth);
+
 class App extends React.Component {
   constructor(props){
   super(props);
@@ -30,21 +33,27 @@ class App extends React.Component {
 
 
     render() {
-
-      store.dispatch(d_action.testfunc())
           return (
             <div id="testapp">
-<Provider store={store}>
-
-
-
-<SignUp/>
 
 
 
 
 
 
+<Router>
+<Header/>
+
+<div className="app_container">
+<Route path="/" exact component={Home} />
+<Route path="/watch_list" component={WatchList} />
+<Route path="/friends" component={Friends} />
+<Route path="/favorites" component={Favorites} />
+<Route path="/history" component={History} />
+<Route path="/liked" component={Likes} />
+<Route path="/saved_searches" component={SavedSearches} />
+</div>
+</Router>
 
 
 
@@ -54,7 +63,11 @@ class App extends React.Component {
 
 
 
-</Provider>
+
+
+
+
+
 
             </div>
                 );

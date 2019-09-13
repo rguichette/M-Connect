@@ -1,3 +1,9 @@
+import { call, put, takeEvery, takeLatest } from 'redux-saga/effects'
+import { SIGN_IN_ATTEMPT } from '../Actions'
+import { SignIn } from './auth'
+
+
+
 export function* mainSaga(){
-  console.log("hello saga");
+  yield takeEvery(SIGN_IN_ATTEMPT, SignIn)
 }

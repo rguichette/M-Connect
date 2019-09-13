@@ -5,7 +5,8 @@ export default class SavedSearches extends Component {
     render() {
         return (
             <div>
-                
+                {console.log("saved")
+                }
                saved SavedSearches page
             </div>
         )
