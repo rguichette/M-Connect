@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { BrowserRouter as Router, Link } from "react-router-dom";
+import { withRouter } from "react-router";
 
 
 import Search from '../Search'
@@ -9,13 +11,39 @@ export default class Header extends Component {
     render() {
         return (
             <div className="header_container">
-                
-                
-                <Burger/>
-                <div className="menu">
-                          menu here
-                      </div>
-                
+
+
+            <Burger/>
+            <div className="menu">
+                  <p>menu here</p>
+
+                  <ul>
+                      <li>
+                          <Link to="/favorites">fa</Link>
+                      </li>
+                      <li>
+                          <Link to="/friends">fr</Link>
+                      </li>
+                      <li>
+                          <Link to="/history">his</Link>
+                      </li>
+                      <li>
+                          <Link to="/liked">Liked</Link>
+                      </li>
+                      <li>
+                          <Link to="/saved_searches">saved Searches</Link>
+                      </li>
+                      <li>
+                          <Link to="/watch_list">wa</Link>
+                      </li>
+                  </ul>
+
+
+
+
+                  
+              </div>
+
 
                 <Search/>
             </div>
@@ -27,12 +55,12 @@ export default class Header extends Component {
 
  class Burger extends Component {
     render() {
-     
+
         return (
-            
+
                 <input id="nav_burger" type="checkbox"/>
-             
-          
+
+
         )
     }
 }
@@ -51,7 +79,9 @@ export default class Header extends Component {
 
     <div id="nav_burger">
                 <input id="nav_burger" type="checkbox"/>
-             
+
             </div>
 
 */}
+
+// export default withRouter(Header)

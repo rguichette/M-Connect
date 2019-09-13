@@ -1,23 +1,25 @@
 html, body{
-  height: 100%;  
-  background-color:rgb(19, 145, 128);
+  height: 100%;
+  /* background-color:rgb(19, 145, 128); */
   margin: 0;
   padding: 0;
 }
 
-/* body{
-   
-    flex-direction: column;
-    height: 3000px;
-    
-} */
-.body_wrapper{
-   
-    background-color: red;
+ body{
+
+     background-color:rgb(19, 145, 128);
+
+
+} 
+.app_container{
+display: flex;
+    /* background-color: red; */
     position: absolute;
     top:30px;
-    
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+
 
 
 }
-

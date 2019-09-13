@@ -1,11 +1,13 @@
 .search_container{
+
     display: flex;
     width:50%;
     background-color:rgba(21, 0, 143, 0.801);
     height:15px;
     justify-content: center;
     border: 2px solid rgba(204, 204, 204, 0.281);
-   
+    z-index: 0;
+
 }
 
 #search_field{
@@ -15,7 +17,7 @@
     flex-grow: 1;
     background-color: purple;
 
-     
+
     /* width: 100%;  */
 }
 
@@ -33,4 +35,3 @@ flex-shrink: 1;
 /* .search_container{
     order:1;
 } */
-

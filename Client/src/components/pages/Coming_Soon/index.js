@@ -1,1 +1,3 @@
-//coming soon page
+import ComingSoon from "./ComingSoon";
+
+export default ComingSoon
