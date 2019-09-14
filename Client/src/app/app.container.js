@@ -13,9 +13,10 @@ const mapDispatchToProps=(dispatch)=>{
   }
   }
   const mapStateToProps = (state, ownProps) => {
+//   console.log("app state is ", state.authReducer.signedIn);
   
     return {
-  
+        signedIn:state.authReducer.signedIn
     }
   }
 

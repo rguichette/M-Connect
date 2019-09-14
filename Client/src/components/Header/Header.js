@@ -9,6 +9,56 @@ import './style.css'
 
 export default class Header extends Component {
     render() {
+
+if(!this.props.signedIn){
+    return(<div className="header_container">
+
+
+    <Burger/>
+    <div className="menu">
+          <p>menu here</p>
+
+          <ul>
+              <li>
+                  <Link to="/favorites">fa</Link>
+              </li>
+              <li>
+                  <Link to="/friends">fr</Link>
+              </li>
+              <li>
+                  <Link to="/history">his</Link>
+              </li>
+              <li>
+                  <Link to="/liked">Liked</Link>
+              </li>
+              <li>
+                  <Link to="/saved_searches">saved Searches</Link>
+              </li>
+              <li>
+                  <Link to="/watch_list">wa</Link>
+              </li>
+          </ul>
+
+
+
+
+          
+      </div>
+
+
+        <Search/>
+      
+
+        
+        
+        <div className="sign_In_btn">
+           <button>  <Link to="/signIn">Sign in</Link> </button>
+         
+        </div>
+        
+    </div>)
+}
+        
         return (
             <div className="header_container">
 
@@ -46,12 +96,18 @@ export default class Header extends Component {
 
 
                 <Search/>
+              
+
+                
+                
                 <div className="right_profile_btn">
                     <input type="checkbox" />
                     <div className="right_menu">
                         <Link to="/profile">Profile</Link>
                         <Link to="/settings">Settings</Link> 
-                        <Link to="/signOut">sign out</Link>
+                        <p onClick={()=>{this.props.onClickSignOut()
+                        }}>sign out</p>
+                       
                     </div>
                 </div>
                 

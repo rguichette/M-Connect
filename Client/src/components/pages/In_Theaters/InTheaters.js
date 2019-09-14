@@ -5,7 +5,9 @@ export default class InTheaters extends Component {
         return (
             <div>
                 
-                InTheaters page
+               
+                <Header/>
+                 InTheaters page
             </div>
         )
     }

@@ -6,6 +6,8 @@ export default class Favorites extends Component {
         return (
             <div>
                 
+              
+               <Header/>
                Favorites page
             </div>
         )

@@ -47,7 +47,7 @@ text-align: center;
   cursor: pointer;
   transform: translate(0px);
   /* margin: 500px; */
-  z-index: 3;
+  /* z-index: 3; */
 }
 
 g {}
@@ -124,4 +124,12 @@ g {}
  
 
  background-color:yellow;
+}
+
+.sign_In_btn{
+order: 3;
+margin: 4px 5px;
+display: flex;
+flex-basis: 60px
+
 }

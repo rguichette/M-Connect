@@ -7,6 +7,8 @@ export default class Likes extends Component {
             <div>
                 {console.log("likes")
                 }
+                
+                <Header/>
                 likes page
             </div>
         )

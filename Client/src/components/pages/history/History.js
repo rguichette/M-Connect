@@ -5,6 +5,8 @@ export default class History extends Component {
         return (
             <div>
               
+               
+               <Header/>
                History page
             </div>
         )

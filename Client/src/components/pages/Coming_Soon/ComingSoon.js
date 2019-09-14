@@ -6,6 +6,8 @@ export default class ComingSoon extends Component {
             <div>
 <Header/>
 
+                
+                <header/>
                 ComingSoon page
             </div>
         )

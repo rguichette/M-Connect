@@ -9,7 +9,8 @@ export const SIGN_OUT_SUCCESS="SIGNED_OUT_SUCCESS"
 
 
 export const SIGNED_IN_FAIL = "SIGNED_IN_FAIL"
-
+//strict
+export const REQUEST_SIGN_IN ="REQUEST_SIGN_IN"
 
 export function initialize(){
     return {
@@ -17,7 +18,13 @@ export function initialize(){
     signedIn:false
 }
 }
- 
+//this is to detect if the right "sign in " button was clicked
+export function requestSignIn_btn(){
+return{
+    type:REQUEST_SIGN_IN
+}
+}
+
 export function attemptSignIn(){
     return{
         type:SIGN_IN_ATTEMPT,

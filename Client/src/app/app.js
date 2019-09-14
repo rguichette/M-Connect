@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, Switch, Redirect } from "react-router-dom";
 
 import d_action from '../../Actions'
 
@@ -33,25 +33,48 @@ class App extends React.Component {
 
 
     render() {
+      var SignedInNode;
+if(this.props.signedIn){
+  console.log("redirecting");
+  
+  SignedInNode = <Redirect exact to="/"/>
+  
+}
+
           return (
+            
             <div id="testapp">
 
 
 
 
 
-
 <Router>
-<Header/>
+
+<div>
+
 
 <div className="app_container">
+
+{SignedInNode}
+<Switch>
+
+
 <Route path="/" exact component={Home} />
-<Route path="/watch_list" component={WatchList} />
+
+
+<Route path="/signIn" component={SignIn} />
 <Route path="/friends" component={Friends} />
 <Route path="/favorites" component={Favorites} />
 <Route path="/history" component={History} />
 <Route path="/liked" component={Likes} />
 <Route path="/saved_searches" component={SavedSearches} />
+<Route path="/watch_list" component={WatchList} />
+
+</Switch>
+
+</div>
+
 </div>
 </Router>
 

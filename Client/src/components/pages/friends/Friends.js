@@ -5,6 +5,8 @@ export default class Friends extends Component {
         return (
             <div>
                 
+                
+                <Header/>
                 friends page
             </div>
         )

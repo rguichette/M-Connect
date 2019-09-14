@@ -7,6 +7,8 @@ export default class SavedSearches extends Component {
             <div>
                 {console.log("saved")
                 }
+               
+               <Header/>
                saved SavedSearches page
             </div>
         )
