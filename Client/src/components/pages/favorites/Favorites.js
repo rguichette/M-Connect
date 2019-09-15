@@ -8,7 +8,11 @@ export default class Favorites extends Component {
                 
               
                <Header/>
-               Favorites page
+               <div className="app_container">
+
+Favorites page
+</div>
+               
             </div>
         )
     }

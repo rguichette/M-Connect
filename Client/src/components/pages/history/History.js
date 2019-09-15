@@ -3,11 +3,15 @@ import Header from '../../Header';
 export default class History extends Component {
     render() {
         return (
-            <div>
+            <div className="app_container">
               
                
                <Header/>
-               History page
+               <div >
+History page
+
+                </div>
+                
             </div>
         )
     }

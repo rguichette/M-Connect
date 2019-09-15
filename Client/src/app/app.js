@@ -43,7 +43,7 @@ if(this.props.signedIn){
 
           return (
             
-            <div id="testapp">
+          
 
 
 
@@ -51,10 +51,7 @@ if(this.props.signedIn){
 
 <Router>
 
-<div>
 
-
-<div className="app_container">
 
 {SignedInNode}
 <Switch>
@@ -73,26 +70,14 @@ if(this.props.signedIn){
 
 </Switch>
 
-</div>
 
-</div>
+
 </Router>
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-            </div>
                 );
         }
 };

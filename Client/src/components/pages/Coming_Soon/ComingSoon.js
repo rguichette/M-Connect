@@ -5,10 +5,13 @@ export default class ComingSoon extends Component {
         return (
             <div>
 <Header/>
+<div className="app_container">
+ComingSoon page
 
+</div>
                 
-                <header/>
-                ComingSoon page
+                
+                
             </div>
         )
     }

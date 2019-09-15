@@ -7,7 +7,14 @@ export default class InTheaters extends Component {
                 
                
                 <Header/>
-                 InTheaters page
+
+                <div >
+
+                    InTheaters page
+                </div>
+
+                
+                 
             </div>
         )
     }

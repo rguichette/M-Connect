@@ -7,7 +7,11 @@ export default class WatchList extends Component {
             <div>
                
                 <Header/>
-                WatchList page 
+                <div>
+WatchList page 
+
+</div>
+                
             </div>
         )
     }

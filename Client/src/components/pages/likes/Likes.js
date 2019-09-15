@@ -9,7 +9,11 @@ export default class Likes extends Component {
                 }
                 
                 <Header/>
-                likes page
+                <div >
+likes page
+
+</div>
+                
             </div>
         )
     }

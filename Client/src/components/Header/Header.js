@@ -9,62 +9,69 @@ import './style.css'
 
 export default class Header extends Component {
     render() {
+        if(!this.props.signedIn){
+            console.log("hot not");
+            
+            return(
+            
+            
+            
+            <div className="header_container">
 
-if(!this.props.signedIn){
-    return(<div className="header_container">
+            <Burger/>
+            <Search/>
+            <button id="sign_In_btn">  <Link to="/signIn">Sign in</Link> </button>
 
-
-    <Burger/>
-    <div className="menu">
-          <p>menu here</p>
-
-          <ul>
-              <li>
-                  <Link to="/favorites">fa</Link>
-              </li>
-              <li>
-                  <Link to="/friends">fr</Link>
-              </li>
-              <li>
-                  <Link to="/history">his</Link>
-              </li>
-              <li>
-                  <Link to="/liked">Liked</Link>
-              </li>
-              <li>
-                  <Link to="/saved_searches">saved Searches</Link>
-              </li>
-              <li>
-                  <Link to="/watch_list">wa</Link>
-              </li>
-          </ul>
-
-
-
-
-          
-      </div>
-
-
-        <Search/>
-      
-
+            </div>
+            
+            
+            )
         
         
-        <div className="sign_In_btn">
-           <button>  <Link to="/signIn">Sign in</Link> </button>
-         
-        </div>
         
-    </div>)
-}
-        
+        }
+
         return (
             <div className="header_container">
 
 
             <Burger/>
-            <div className="menu">
+          
+
+                <Search/>
+                <div className="right_profile_btn">
+                    <input type="checkbox" />
+                    <div className="right_menu">
+                        <Link to="/profile">Profile</Link>
+                        <Link to="/settings">Settings</Link> 
+                        <p onClick={()=>{this.props.onClickSignOut()
+                        }}>sign out</p>
+                    </div>
+                </div>
+                
+            </div>
+        )
+    }
+}
+
+//style={{backgroundColor: "#FF8899"}}
+
+ class Burger extends Component {
+    render() {
+            console.log("checked reload");
+            
+            var t = null;
+           
+
+            
+            
+        return (
+
+                <div className="full_menu">
+                  
+                <input id="nav_burger" type="checkbox"/>
+                <div className="menu">
+
                   <p>menu here</p>
 
                   <ul>
@@ -94,37 +101,7 @@ if(!this.props.signedIn){
                   
               </div>
 
-
-                <Search/>
-              
-
-                
-                
-                <div className="right_profile_btn">
-                    <input type="checkbox" />
-                    <div className="right_menu">
-                        <Link to="/profile">Profile</Link>
-                        <Link to="/settings">Settings</Link> 
-                        <p onClick={()=>{this.props.onClickSignOut()
-                        }}>sign out</p>
-                       
-                    </div>
-                </div>
-                
-            </div>
-        )
-    }
-}
-
-//style={{backgroundColor: "#FF8899"}}
-
- class Burger extends Component {
-    render() {
-
-        return (
-
-                <input id="nav_burger" type="checkbox"/>
-
+</div>
 
         )
     }

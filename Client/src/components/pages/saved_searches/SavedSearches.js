@@ -9,7 +9,11 @@ export default class SavedSearches extends Component {
                 }
                
                <Header/>
-               saved SavedSearches page
+               <div >
+saved SavedSearches page
+
+</div>
+               
             </div>
         )
     }
