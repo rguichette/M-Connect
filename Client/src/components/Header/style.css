@@ -90,7 +90,7 @@ transform: translate(1000px);
 }
 
 /* changing menu and just that */
-#nav_burger:checked + .menu{
+#nav_burger:checked ~ .menu{
   transform: translate(0);
 }
 

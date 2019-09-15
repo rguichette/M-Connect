@@ -60,6 +60,7 @@ if(this.props.signedIn){
 <Route path="/" exact component={Home} />
 
 
+<Route path="/signup" component={SignUp} />
 <Route path="/signIn" component={SignIn} />
 <Route path="/friends" component={Friends} />
 <Route path="/favorites" component={Favorites} />

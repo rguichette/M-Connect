@@ -26,9 +26,9 @@ export default class SignIn extends Component {
                     
                     
                     Log In</button>
-
+                    <p>Don't have an account? <Link to="signup">Sign Up</Link></p>
                 </div>
-               SignIn page 
+               <p>SignIn page </p>
             </div>
         )
     }

@@ -27,9 +27,10 @@ html, body{
 }
 
 .header_container + div {
-  background-color: rgb(33, 56, 4);
+  background-color: rgb(0, 0, 0);
   height:100%;
   margin-top: 50px;
+  
 }
 /* .app_container{
   height:100%;

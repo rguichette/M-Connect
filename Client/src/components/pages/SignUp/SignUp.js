@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { BrowserRouter as Router, Route, Link, Switch, Redirect } from "react-router-dom";
+
 
 import "./style.css"
 export default class SignUp extends Component {
@@ -20,8 +22,10 @@ export default class SignUp extends Component {
 
 
                 </div>
-                <button type="button">submit</button>
+                <button type="button" >submit</button>
+                <Link to="/signin">Sign in instead</Link>
                 </form>
+                
             </div>
         )
     }

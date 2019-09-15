@@ -70,6 +70,7 @@ export default class Header extends Component {
                 <div className="full_menu">
                   
                 <input id="nav_burger" type="checkbox"/>
+                <Link to="/">LOGO</Link>
                 <div className="menu">
 
                   <p>menu here</p>
