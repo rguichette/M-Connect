@@ -17,40 +17,38 @@ export default class Home extends Component {
                             <div className="main_container">
                             
                                 <div className="movies_container">
-                                <p>In Theaters</p>
-                                <Link to="in_theaters " className="extras_link">view all</Link>
-                                   <div>
-                                    <Movie/>
-                                    <Movie/>
-                                    <Movie/>
-                                    <Movie/>
-                                    <Movie/>
-                                    <Movie/>
+                                    <p>In Theaters</p>
+                                    <Link to="in_theaters " className="extras_link">view all</Link>
+                                    <div>
+                                        <Movie/>
+                                        <Movie/>
+                                        <Movie/>
+                                        <Movie/>
+                                        <Movie/>
+                                        <Movie/>
                                     </div> 
+                                </div>
+
+
+                                <div className="movies_container">
+                                    <p>coming soom</p>
+                                    <Link to="coming_soon " className="extras_link">view all</Link>
+                                    <div>
+                                        <Movie/>
+                                        <Movie/>
+                                        <Movie/>
+                                        <Movie/>
+                                        <Movie/>
+                                        <Movie/>
+                                    </div> 
+                                </div>
+
                             </div>
-                            </div>
-                            <div className="coming_soon_home">
-                            <div className="main_container">
-                            
-                            <div className="movies_container">
-                            <p>Coming Soon</p>
-                            <Link to="coming_soon" className="extras_link">view all</Link>
-                               <div>
-                                <Movie/>
-                                <Movie/>
-                                <Movie/>
-                                <Movie/>
-                                <Movie/>
-                                <Movie/>
-                                </div> 
-                        </div>
-                        </div>
-                                
-                            </div>
+                </div>
                 </div>
                 
                 
-            </div>
+       
         )
     }
 }
