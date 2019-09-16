@@ -1,10 +1,13 @@
 import { connect } from 'react-redux'
 
 import Search from "./Search"
+import { attemptSearch } from '../../../Actions'
 
 const mapDispatchToProps=(dispatch)=>{
     return{
-
+      performSearch:(val)=>{
+dispatch(attemptSearch(val))
+      }
 
   }
   }

@@ -1,18 +1,21 @@
 import { connect } from 'react-redux'
-
-import Movie from "./Movie"
+import {addToFavorites} from '../../../Actions'
+import MovieCard from "./Movie"
 
 const mapDispatchToProps=(dispatch)=>{
     return{
+
     onSelect:()=>{
-  console.log("opening more information about the movie");
+      
+    console.log("opening more information about the movie");
   
-  },
+    },
 
-  onAddToFavorites:()=>{
-console.log("adding movie to favorites");
-
-  }
+    addToFavoritesBtn:()=>{
+    
+      console.log("adding movie to favorites");
+      dispatch(addToFavorites())
+    }
   }
   }
   const mapStateToProps = (state, ownProps) => {
@@ -24,9 +27,9 @@ console.log("adding movie to favorites");
   }
 
 
-  const MovieCard = connect(
+  const Movie = connect(
     mapStateToProps,
     mapDispatchToProps
-  )(Movie)
+  )(MovieCard)
   
-  export default MovieCard
+  export default Movie

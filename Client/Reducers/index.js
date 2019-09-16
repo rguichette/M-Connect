@@ -1,5 +1,6 @@
 import { combineReducers } from 'redux'
 
 import authReducer from './auth'
-
-export default combineReducers({authReducer})
+import moviesReducer from './movies'
+import searchReducer from './search'
+export default combineReducers({authReducer, moviesReducer, searchReducer })

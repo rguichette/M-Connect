@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Header from '../../Header';
-import Movie from '../../Movie/Movie';
+import Movie from '../../Movie';
 // import MovieCard from '../../Movie';
 
 import { BrowserRouter as Router, Route, Link, Switch, Redirect } from "react-router-dom";
@@ -26,6 +26,7 @@ export default class Home extends Component {
                                         <Movie/>
                                         <Movie/>
                                         <Movie/>
+                                  
                                     </div> 
                                 </div>
 
@@ -40,6 +41,7 @@ export default class Home extends Component {
                                         <Movie/>
                                         <Movie/>
                                         <Movie/>
+
                                     </div> 
                                 </div>
 

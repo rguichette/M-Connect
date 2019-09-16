@@ -1,3 +1,3 @@
-import MovieCard from "./Movie.container"
+import Movie from "./Movie.container"
 
-export default MovieCard
+export default Movie
