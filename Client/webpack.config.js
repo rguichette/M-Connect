@@ -5,11 +5,15 @@ var path = require('path');
 const PUBLIC_PATH = path.resolve( __dirname, "./src" );
 
 module.exports = {
+  mode:'development',
   entry: './index.js',
 
   output: {
-    path: path.resolve(__dirname, './dist'),
-    filename: 'index_bundle.js'
+    path: path.resolve(__dirname, '../public'),
+    filename: 'bundle.js',
+    // publicPath: '/',
+    hotUpdateChunkFilename: 'hot/hot-update.js',
+    hotUpdateMainFilename: 'hot/hot-update.json'
   },
   module: {
     rules: [{
@@ -18,7 +22,9 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ["@babel/react", '@babel/preset-env']
+            presets: ["@babel/preset-env",
+            "@babel/preset-react"
+          ]
           }
         }
       },
@@ -33,16 +39,19 @@ module.exports = {
 
   },
 
-  devServer: {
-    contentBase: [path.join(__dirname, 'dist')],
-    compress: true,
-    port: 9000,
-    historyApiFallback: true
+  
 
+  devServer: {
+    // contentBase: [path.join(__dirname, '../dist')],
+    compress: true,
+    // port: 9000,
+    historyApiFallback: true,
+  
+    writeToDisk: true,
    
   },
 
   plugins: [new HtmlWebpackPlugin({
-    template: "./public/index.html"
+    template: "./src/index.html"
   })]
 };
