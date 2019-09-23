@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Header from '../../Header';
+import Pagination from '../../Pagination';
 export default class InTheaters extends Component {
     render() {
         return (
@@ -9,8 +10,10 @@ export default class InTheaters extends Component {
                 <Header/>
 
                 <div >
-
+               
                     InTheaters page
+
+                    <Pagination/>
                 </div>
 
                 

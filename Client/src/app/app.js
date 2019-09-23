@@ -22,6 +22,7 @@ import SignUp from '../components/pages/SignUp'
 
 
 import * as auth from "../../Actions/auth"
+import InTheaters from '../components/pages/In_Theaters';
 
 // console.log("auth is ", auth);
 
@@ -59,7 +60,7 @@ if(this.props.signedIn){
 
 <Route path="/" exact component={Home} />
 
-
+<Route path="/in_theaters" component={InTheaters}/>
 <Route path="/signup" component={SignUp} />
 <Route path="/signIn" component={SignIn} />
 <Route path="/friends" component={Friends} />

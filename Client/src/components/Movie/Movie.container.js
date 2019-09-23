@@ -13,7 +13,7 @@ const mapDispatchToProps=(dispatch)=>{
 
     addToFavoritesBtn:()=>{
     
-      console.log("adding movie to favorites");
+      // console.log("adding movie to favorites");
       dispatch(addToFavorites())
     }
   }

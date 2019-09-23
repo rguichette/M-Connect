@@ -10,10 +10,10 @@ module.exports = {
 
   output: {
     path: path.resolve(__dirname, '../public'),
-    filename: 'bundle.js',
+    filename: 'index_bundle.js',
     // publicPath: '/',
-    hotUpdateChunkFilename: 'hot/hot-update.js',
-    hotUpdateMainFilename: 'hot/hot-update.json'
+    // hotUpdateChunkFilename: 'hot/hot-update.js',
+    // hotUpdateMainFilename: 'hot/hot-update.json'
   },
   module: {
     rules: [{
