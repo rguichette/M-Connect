@@ -1,4 +1,4 @@
-import { searchSuccess, SEARCH_SUCCESS, FETCH_THEATERS_SUCCESS, fetchTheatersSuccess } from "../Actions";
+import { searchSuccess, SEARCH_SUCCESS, FETCH_THEATERS_SUCCESS, fetchTheatersSuccess, fetchUpcomingSuccess, FETCH_UPCOMING_SUCCESS } from "../Actions";
 
 
 export default function searchReducer(state={}, action){
@@ -12,9 +12,12 @@ export default function searchReducer(state={}, action){
 
         case FETCH_THEATERS_SUCCESS:
             console.log("action: ", action);
-            return Object.assign({}, state, fetchTheatersSuccess(action.browseData)
+            return Object.assign({}, state, fetchTheatersSuccess(action.theaters_browseData)
             )
-
+        case FETCH_UPCOMING_SUCCESS:
+            console.log("action: ", action);
+            return Object.assign({}, state, fetchUpcomingSuccess(action.upcomingbrowseData)
+            )
 
 
     default:

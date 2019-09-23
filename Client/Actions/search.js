@@ -34,17 +34,17 @@ export function searchFailed(err){
     }
 }
 
-export function fetchUpcoming(browseData){
+export function fetchUpcoming(upcomingbrowseData){
     return{
         type:FETCH_UPCOMING,
-        browseData
+        upcomingbrowseData
     }
 }
 
-export function fetchUpcomingSuccess(browseData){
+export function fetchUpcomingSuccess(upcomingbrowseData){
     return{
         type:FETCH_UPCOMING_SUCCESS,
-        browseData
+        upcomingbrowseData
     }
 }
 
@@ -63,9 +63,9 @@ export function fetchTheaters(page=1){
 }
 
 
-export function fetchTheatersSuccess(browseData){
+export function fetchTheatersSuccess(theaters_browseData){
     return{
         type:FETCH_THEATERS_SUCCESS,
-        browseData
+        theaters_browseData
     }
 }

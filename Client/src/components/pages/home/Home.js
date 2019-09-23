@@ -14,13 +14,24 @@ export default class Home extends Component {
     // }
     render() {
 
-      let movieData;
+      let t_movieData;
+      let u_movieData;
 
-       if(this.props.movieData){
-         movieData = this.props.movieData.slice(0,6)
+       if(this.props.theaters_browseData){
+         // TODO: make it random
+         t_movieData = this.props.theaters_browseData.slice(0,6)
        }else{
-         movieData=[];
+         t_movieData=[];
        }
+
+       if(this.props.upcoming_browseData){
+         // TODO: make it random
+         u_movieData = this.props.upcoming_browseData.slice(2,8);
+       }else{
+         u_movieData=[];
+       }
+       console.log("u_", u_movieData)
+
         return (
             <div>
                 <Header/>
@@ -43,7 +54,7 @@ export default class Home extends Component {
                                     {
       // console.log("mdata =", movieData),
 
-      movieData.map((item, i)=>{
+      t_movieData.map((item, i)=>{
         console.log("mdata...", i)
         return <Movie m_img_src={`${POSTER_BASE_URL}/${item.poster_path}`}/>
 
@@ -58,13 +69,12 @@ export default class Home extends Component {
                                     <p>coming soom</p>
                                     <Link to="coming_soon " className="extras_link">view all</Link>
                                     <div>
-                                        <Movie/>
-                                        <Movie/>
-                                        <Movie/>
-                                        <Movie/>
-                                        <Movie/>
-                                        <Movie/>
+                                    {
+                                    u_movieData.map((item, i)=>{
+                                      return <Movie m_img_src={`${POSTER_BASE_URL}/${item.poster_path}`}/>
+                                    })
 
+                                    }
                                     </div>
                                 </div>
 

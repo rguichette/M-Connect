@@ -24,10 +24,12 @@ const mapDispatchToProps=(dispatch)=>{
 // console.log("state from home is ", state.searchReducer);
 
     return {
-      movieData: state.searchReducer.browseData
+      theaters_browseData: state.searchReducer.theaters_browseData,
+      upcoming_browseData: state.searchReducer.upcomingbrowseData
+
     }
 
-  
+
   }
 
 
